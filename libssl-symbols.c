@@ -72,6 +72,10 @@ SYM(SSL_write, int)
     (SSL *ssl, const void *buf, int num)
     { return SSL_write(ssl, buf, num); }
 
+SYM(SSLv23_method, const SSL_METHOD *)
+    (void)
+    { return SSLv23_method(); }
+
 SYM(SSLv3_method, const SSL_METHOD *)
     (void)
     { return SSLv3_method(); }

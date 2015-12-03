@@ -40,6 +40,10 @@ SYM(DH_new, DH *)
     (void)
     { return DH_new(); }
 
+SYM(DH_free, void)
+    (DH *a)
+    { return DH_free(a); }
+
 SYM(RSA_free, void)
     (RSA *r)
     { RSA_free(r); }
@@ -47,3 +51,7 @@ SYM(RSA_free, void)
 SYM(RSA_generate_key, RSA *)
     (int bits, unsigned long e, void (*callback)(int, int, void *), void *cb_arg)
     { return RSA_generate_key(bits, e, callback, cb_arg); }
+
+SYM(X509_free, void)
+    (X509 *a)
+    { X509_free(a); }
