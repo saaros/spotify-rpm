@@ -1,0 +1,17 @@
+{
+    "libs": ["-lcurl"],
+    "name": "libcurl-gnutls.so.4",
+    "version": "CURL_GNUTLS_3",
+    "headers": [
+        "curl/curl.h"
+    ],
+    "symbols": {
+        "curl_easy_init": ["CURL *", []],
+        "curl_easy_getinfo": ["CURLcode", ["CURL*", "CURLINFO", "void*"]],
+        "curl_easy_perform": ["CURLcode", ["CURL*"]],
+        "curl_easy_setopt": ["CURLcode", ["CURL*", "CURLoption", "long"]],
+        "curl_easy_cleanup": ["void", ["CURL*"]],
+        "curl_slist_append": ["struct curl_slist *", ["struct curl_slist *", "const char *"]],
+        "curl_slist_free_all": ["void", ["struct curl_slist *"]]
+    }
+}
