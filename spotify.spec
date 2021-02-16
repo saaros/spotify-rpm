@@ -1,9 +1,8 @@
-%global gitid g51b03ac3-13
 %global debug_package %{nil}
 %global __os_install_post %{nil}
 
 Name:           spotify
-Version:        1.0.80.480
+Version:        %{version}
 Release:        0%{?dist}.os1
 Summary:        Spotify desktop client
 Group:          Applications/Multimedia
@@ -49,6 +48,9 @@ ln -s %{_datadir}/%{name}/icons/spotify-linux-512.png %{buildroot}%{_datadir}/pi
 %{_datadir}/pixmaps/%{name}-client.png
 
 %changelog
+* Tue Feb 16 2021 Oskari Saarenmaa <oskari@saarenmaa.fi>
+- Update to 1.1.42.622
+
 * Sat Aug 11 2018 Oskari Saarenmaa <oskari@saarenmaa.fi>
 - Update to 1.0.80.480
 - Add a new libcurl-gnutls compatibility hack and drop the ssl hacks

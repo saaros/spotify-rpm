@@ -1,2 +1,2 @@
 Repackage official Spotify debian package for recent Fedora releases and
-build the required wrapper libraries to support newer OpenSSL.
+build a libcurl-gnutls shim to work with the Fedora curl package.
