@@ -1,5 +1,5 @@
-version = 1.1.42.622
-gitid = gbd112320-37
+version = 1.2.63.394
+gitid = g126b0d89
 deb = spotify-client_$(version).$(gitid)_amd64.deb
 
 rpm: $(deb)
@@ -10,4 +10,4 @@ rpm: $(deb)
 		-bb spotify.spec
 
 $(deb):
-	curl -O http://repository.spotify.com/pool/non-free/s/spotify-client/$@
+	curl -O https://repository.spotify.com/pool/non-free/s/spotify-client/$@
