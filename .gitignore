@@ -1,2 +1,9 @@
+*.ok
 *~
+.#*
 /*.deb
+/*.rpm
+/compat-*.c
+/compat-*.map
+/libcurl-gnutls.so.4
+__pycache__/
